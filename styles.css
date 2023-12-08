@@ -1,0 +1,519 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: black;
+  overflow-x: hidden;
+}
+
+.nav-name {
+  display: flex;
+}
+
+.text {
+  font-size: 60px;
+}
+
+.header {
+  display: flex;
+  /* margin-top: 20px; */
+  padding: 20px;
+  /* margin: 10px 10px; */
+  background-color: #fff;
+  box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+}
+
+.name {
+  padding-top: 10px;
+}
+
+.list {
+  margin-left: auto;
+  display: flex;
+}
+
+.items {
+  padding: 10px;
+  list-style: none;
+  cursor: default;
+}
+
+.items:hover {
+  color: rgb(100, 3, 100);
+  text-decoration: underline;
+  transition: color 0.45s ease, text-decoration 0.9s ease;
+}
+
+.container {
+  display: grid;
+
+  padding-top: 250px;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #f8f8f8;
+  /* grid-template-columns: 600px 600px; */
+  /* grid-template-columns: 450px 450px; */
+}
+
+.content {
+  padding: 30px;
+}
+
+.span {
+  color: rgb(128, 0, 128);
+  display: flex;
+  padding-left: 10px;
+  cursor: default;
+}
+
+.name-span{
+  display: flex;
+}
+
+.btn {
+ background-color: rgb(128, 0, 128);
+ padding: 20px;
+ border-radius: 10px;
+ color: #fff;
+ width: 8rem;
+ margin-top: 20px;
+ border: none;
+ margin: 15px;
+}
+
+.btn:hover {
+  background-color: rgb(155, 43, 155);
+  color: black;
+  transform: translateY(-5px);
+  transition: background-color 0.35s ease, color 0.35s ease, transform 0.35s ease-in-out; 
+}
+
+.par {
+  letter-spacing: 1px;
+  padding-top: 10px;
+  font-size: 24px;
+}
+
+.image {
+  width: 50%;
+  height: 60%;
+  border-radius: 800px;
+  box-shadow: 5px 10px 10px  rgb(0, 0, 0, 0.1);
+  margin-left: 60px;
+}
+
+
+
+/* about me section styles*/
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: beige;
+  height: 100vh;
+  align-items: center;
+}
+
+.about-img {
+  width: 350px;
+  height: 350px;
+  border-radius: 10px;
+}
+
+.about-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-par {
+  letter-spacing: 1px;
+  font-size: 22px;
+}
+
+.headeing {
+  font-size: 27px;
+}
+
+.about-me {
+  margin: 20px;
+}
+
+/* My skills section styles */
+.skills-container {
+  width: 100%;
+  height: auto;
+}
+
+.all-skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+.skill {
+  border: none;
+  background-color: #ebe8e8;
+  /* border-radius: 10px; */
+  text-align: center;
+  width: 250px;
+  height: 250px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
+  margin: 40px;
+  /* margin-top: 100px; */
+  cursor: pointer;
+}
+
+.skill:hover {
+  transition: transform 0.45s ease;
+  transform: scale(1.07);
+}
+
+.skill-list {
+  list-style: none;
+}
+
+.ski {
+  padding: 10px;
+}
+
+.skills-header {
+  background-color: rgb(18, 177, 177);
+  padding: 10px;
+  font-size: medium;
+  border-radius: 5px;
+}
+
+.my-skills {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  font-size: large;
+}
+
+.skills-grid {
+  margin: 20px;
+}
+
+
+/* projects section styles */
+.projects-main {
+  margin-top: 100px;
+}
+
+.project-title {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.all-projects {
+  margin: 20px;
+}
+
+.project {
+  display: flex;
+  border: rgb(128,0,128) 1px solid;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.projects-contain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  width: 50%;
+  margin-bottom: 40px;
+  height: 400px;
+}
+
+.screenshot {
+  padding: 10px;
+  width: 50%;
+  margin: 20px 20px;
+  /* margin-top: 30px; */
+  height: 400px;
+}
+
+.project-screenshot {
+  width: 80%;
+  height: 85%;
+}
+
+.website {
+  font-size: 30px;
+}
+
+.website-description {
+  letter-spacing: 1px;
+  font-size: 26px;
+}
+
+.live {
+  margin: 10px;
+  padding: 15px;
+  border-color: rgb(218, 117, 218);
+  background-color: #fff;
+  border-radius: 5px;
+  color: rgb(218, 117, 218);
+}
+
+.live:hover {
+  color: rgb(41, 0, 41);
+  border-color: rgb(41, 0, 41) ;
+  transform: scale(0.91);
+  transition: color 0.4s ease, background-color 0.4s ease, transform 0.4s ease;
+}
+
+
+
+.contact-container {
+  margin: 20px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.contact-details {
+  margin-top: 30px;
+}
+
+.contact-info {
+  font-size: 18px;
+  color: #333;
+}
+
+.reach-out-info {
+  margin-top: 10px;
+  color: rgb(136, 19, 136);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-left: 20px;
+}
+
+#inputs {
+  margin: 10px;
+  padding: 15px;
+}
+
+#message {
+  height: 6rem;
+  padding: 10px;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.submit-btn {
+  margin: 10px 0;
+  padding: 15px;
+  width: 50%;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(128, 0, 128);
+  color: #fff;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: rgb(196, 39, 196);
+  transition: background-color 0.3s ease;
+}
+
+.form {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 30px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Add this to your existing CSS file or include it in a separate stylesheet */
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-links li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+#links {
+  color: #fff;
+}
+
+
+/* media queries for large devices */
+
+@media only screen and (max-width: 1400px){
+  .website-description {
+    font-size: 20px;
+  }
+  .website {
+    font-size: 23px;
+  }
+  .text {
+    font-size: 37px;
+  }
+  .text {
+    display: flex;
+    flex-direction: row;
+  }
+
+}
+
+/* media queries for medium screens */
+@media only screen and (max-width: 900px) {
+  .about-img {
+    margin: 20px;
+  }
+  .about-par {
+    font-size: medium;
+    padding: 10px;
+  }
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5px;
+  }
+  .all-skills {
+    margin: 100px;
+  }
+  .website-description {
+    font-size: 18px;
+  }
+  .website {
+    font-size: 22px;
+  }
+  .project-description {
+    font-size: 15px;
+  }
+  .text {
+    font-size: 28px;
+  }
+  .text {
+    display: flex;
+    flex-direction: row;
+  }
+  .par {
+    font-size: 22px;
+  }
+  .btn {
+    padding: 17px;
+    margin: 10px;
+  }
+  .portfolio-btns {
+    display: flex;
+  }
+
+}
+
+/* media queries for small screens */
+@media only screen and (max-width:700px){
+  .header {
+    display: none;
+  }
+  .container {
+    display: block;
+    margin: 20px;
+    width: 100%;
+  }
+  .image {
+    height: 220px;
+    width: 220px;
+  }
+  .image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-container {
+    display: block;
+    height: fit-content;
+  }
+  .about-par {
+    font-size: 22px;
+  }
+  .about-me {
+    margin-top: 30px;
+  }
+  .skills-grid {
+    display: block;
+  }
+  .skills-container {
+    margin-top: 50px;
+    padding: 10px;
+  }
+  .all-skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* margin: -50px; */
+  }
+  .website-description {
+    font-size: 14px;
+  }
+  .website {
+    font-size: 19px;
+  }
+  .project-description {
+    font-size: 13px;
+  }
+  .image-container {
+    display: flex;
+    align-items: center ; 
+    justify-content: center;
+  }
+}
+
+
+/* media queries for extra small devices */
+@media only screen and (max-width:500px){
+  .project{
+    display: block;
+    margin-top: 10px;
+  }
+  .projects-contain {
+    padding-top: -5rem;
+    width: 100%;
+  }
+  .project-screenshot {
+    width: 190%;
+  }
+}
