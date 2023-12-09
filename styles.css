@@ -75,6 +75,20 @@ body {
   display: flex;
 }
 
+.icons {
+  padding: 20px;
+}
+
+#icon-links {
+  padding: 7px;
+  font-size: large;
+  cursor: default;
+}
+#icon-links:hover {
+  color: rgb(128, 0, 128);
+  transition: color 0.4s ease;
+}
+
 .btn {
  background-color: rgb(128, 0, 128);
  padding: 20px;
@@ -182,7 +196,7 @@ body {
 }
 
 .skills-header {
-  background-color: rgb(18, 177, 177);
+  background-color: rgb(141, 24, 141);
   padding: 10px;
   font-size: medium;
   border-radius: 5px;
@@ -376,6 +390,15 @@ body {
   color: #fff;
 }
 
+#foorer-icon-links {
+  padding: 15px;
+}
+
+#foorer-icon-links:hover  {
+  color: rgb(128, 0, 128);
+  transition: color 0.4s ease;
+}
+
 
 /* media queries for large devices */
 
@@ -547,5 +570,8 @@ body {
   }
   .project-screenshot {
     width: 190%;
+  }
+  .footer-content {
+    display: block;
   }
 }
