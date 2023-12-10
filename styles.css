@@ -44,7 +44,7 @@ body {
 }
 
 .items:hover {
-  color: rgb(100, 3, 100);
+  color: rgb(92, 0, 92);
   text-decoration: underline;
   transition: color 0.45s ease, text-decoration 0.9s ease;
 }
@@ -481,6 +481,7 @@ body {
     background-color: black;
     margin: 5px 0;
     cursor: pointer;
+    transition: 0.45s ease;
   }
   .list {
     display: none;
@@ -497,13 +498,25 @@ body {
     height: 450px;
     margin: 0 20px;
     text-align: center;
+    transition: 0.45s ease;
   }
   .items {
     padding: 30px;
     font-size: large;
   }
+  .hamburger-icon.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger-icon.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger-icon.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
 
-
+  .header  {
+    top: 0;
+  }
   .container {
     display: block;
     margin: 20px;
